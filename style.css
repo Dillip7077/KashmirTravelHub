@@ -1,0 +1,521 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .brand{
+    height: 5vh;
+    width: 2.8vw;
+  }
+  .container{
+    align-items: center;
+    text-align: center;
+ 
+  }
+  .navbar,h1{
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+     
+  }
+  #intro-example {
+    position: relative;
+    overflow: hidden;
+    height: 68vh;
+    width: 100%;
+  }
+
+  .bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .text-white {
+    color: rgb(31, 27, 27);
+    text-shadow: 
+      2px 2px 4px rgba(0, 0, 0, 0.6), 
+      0 0 25px rgba(255, 255, 255, 0.5);
+  }
+
+  h1 {
+    font-weight: bold;
+    background: linear-gradient(45deg, #e97474, #f7d794);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 
+      2px 2px 4px rgba(53, 49, 49, 0.8), 
+      0 0 15px rgba(255, 255, 255, 0.7); 
+    padding: 10px;
+    display: inline-block; 
+  }
+
+  h5 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    background: linear-gradient(45deg, #ffab6b, #f7d794);
+    border: 2px solid transparent;
+  }
+
+  .btn:hover {
+    background: linear-gradient(45deg, #f7d794, #ffa66b);
+    border-color: #f7d794;
+  }
+
+  .text-secondary {
+    position: relative;
+    z-index: 1; /* Ensure text and buttons are above the background image */
+  }
+  
+
+
+
+
+/*///////////////////////////////////////////////////////*/
+
+
+
+
+
+/* Icons Grid */
+.features-icons .features-icons-icon i {
+    font-size: 3rem;
+}
+
+/* Showcase */
+.showcase-img {
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+.showcase-text {
+    padding: 2rem;
+}
+
+/* Testimonials */
+.testimonial-item {
+    border: 2px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.testimonial-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+
+/* Call to Action */
+.call-to-action {
+    background: linear-gradient(45deg, #ff6b6b, #f7d794);
+}
+.call-to-action .form-control {
+    border-radius: 20px;
+}
+.call-to-action .btn-primary {
+    background-color: #fff;
+    color: #ff6b6b;
+    border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .footer a:hover {
+    text-decoration: none;
+  }
+  
+  .footer .list-inline {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  
+  .footer .list-inline-item {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .row.justify-content-center {
+    justify-content: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Default Light Theme */
+/* body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px;
+} */
+
+
+
+
+/* ////////////////////////////////--------------------------------------------------- */
+/* Default Light Theme */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px;
+}
+
+/* Call to Action Section */
+.call-to-action {
+  background: linear-gradient(45deg, #ff6b6b, #f7d794);
+  padding: 3rem 0; /* Ensure adequate padding */
+}
+
+.call-to-action .form-control {
+  border-radius: 20px;
+}
+
+.call-to-action .btn-primary {
+  background-color: #fff;
+  color: #ff6b6b;
+  border-radius: 20px;
+}
+
+.call-to-action .btn-primary:hover {
+  background-color: #f7d794;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.navbar .navbar-brand {
+  color: black;
+}
+
+.navbar .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.navbar .btn:hover {
+  background-color: #0056b3;
+}
+
+/* ICON GRID */
+.features-icons {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.features-icons .container {
+  background-color: #f8f9fa;
+}
+
+
+.features-icons-item h3, 
+.features-icons-item p {
+  color: black;
+}
+
+
+/* Testimonials */
+.testimonials {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.testimonials .container {
+  background-color: #f8f9fa;
+}
+
+.testimonial-item {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.testimonial-item img {
+  border: 3px solid #ddd;
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.footer a {
+  color: #007bff;
+}
+
+.footer .text-muted {
+  color: #6c757d;
+}
+
+.footer .list-inline-item {
+  color: #007bff;
+}
+
+.footer .list-inline-item a {
+  color: #007bff;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-theme .call-to-action {
+  background: linear-gradient(45deg, #333, #555);
+  padding: 3rem 0;
+}
+
+.dark-theme .call-to-action .form-control {
+  background-color: #2c2c2c;
+  color: white;
+  border: 5px solid #444;
+}
+
+.dark-theme .call-to-action .btn-primary {
+  background-color: #333;
+  color: #ff6b6b;
+  border-radius: 20px;
+}
+
+.dark-theme .call-to-action .btn-primary:hover {
+  background-color: #444;
+}
+
+.dark-theme .navbar {
+  background-color: #1e1e1e !important;
+}
+
+.dark-theme .navbar .navbar-brand {
+  color: white !important;
+}
+
+.dark-theme .navbar .btn {
+  background-color: #444 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.dark-theme .navbar .btn:hover {
+  background-color: #666 !important;
+}
+
+.dark-theme .features-icons {
+  background-color: #1e1e1e !important;
+  color: white !important;
+}
+
+.dark-theme .features-icons .container {
+  background-color: #1e1e1e !important;
+}
+
+.dark-theme .features-icons-item {
+  background-color: #2c2c2c !important;
+  border: 1px solid #444 !important;
+  border-radius: 10PX;
+  padding: 1rem;
+}
+
+.dark-theme .features-icons-item h3, 
+.dark-theme .features-icons-item p {
+  color: white !important;
+}
+
+.dark-theme .features-icons-icon img {
+  border: 2px solid #333 !important;
+  border-radius: 8px;
+  filter: brightness(0.9);
+}
+
+.dark-theme .testimonials {
+  background-color: #1e1e1e !important;
+  color: white !important;
+}
+
+.dark-theme .testimonials .container {
+  background-color: #1e1e1e !important;
+}
+
+.dark-theme .testimonial-item {
+  background-color: #2c2c2c !important;
+  border: 2px solid #444 !important;
+}
+
+.dark-theme .testimonial-item img {
+  border: 3px solid #444 !important;
+}
+
+.dark-theme .testimonial-item h5,
+.dark-theme .testimonial-item p {
+  color: white !important;
+}
+
+.dark-theme .footer {
+  background-color: #2c2c2c !important;
+  color: white !important;
+}
+
+.dark-theme .footer a {
+  color: #80bfff !important;
+}
+
+.dark-theme .footer .text-muted {
+  color: #a6a6a6 !important;
+}
+
+.dark-theme .footer .list-inline-item {
+  color: #80bfff !important;
+}
+
+.dark-theme .footer .list-inline-item a {
+  color: #80bfff !important;
+}
+
+.dark-theme .footer .list-inline-item i {
+  color: #80bfff !important;
+}
+
+/* Default Light Theme */
+.form-control::placeholder {
+  color: #6c757d; /* Light gray color for placeholder text */
+}
+
+/* Dark Theme */
+.dark-theme .form-control::placeholder {
+  color: #aaa; /* Lighter gray color for placeholder text in dark mode */
+}
+
+/* Ensure to include this CSS in your stylesheet or within a <style> tag */
+
+#dark-mode-toggle {
+  background-color: transparent; /* Remove default button background */
+  border: none; /* Remove default button border */
+  padding: 0; /* Remove default button padding */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  display: flex;
+  align-items: center; /* Center the GIF vertically */
+}
+
+#dark-mode-toggle img {
+  width: 30px; /* Adjust size of the GIF */
+  height: 30px; /* Adjust size of the GIF */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#dark-mode-toggle:hover img {
+  transform: scale(1.1); /* Slightly scale up the GIF on hover */
+}
+
+#dark-mode-toggle:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+/* ////////////////////////////------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+  
+  /* Responsive Styles */
+
+@media (max-width: 768px) {
+    .gif-container {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      max-width: 120px;
+    }
+    .text-center {
+      padding: 10px;
+    }
+    .btn {
+      font-size: 0.9rem;
+    }
+    h1{
+       font-size: 5rem;
+  }
+  .headtext{
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .footer .list-inline-item {
+    display: block;
+    margin: 5px 0;
+  }
+  .brand{
+      height: 2vh;
+      width: 3vw;
+    }
+}
+
+
+
+
